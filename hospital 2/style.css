@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+      /* Navbar Starts */
+
+.navbar {
+  position: fixed;
+  height: 80px;
+  overflow: hidden;
+  top: 0;
+  display: flex;
+  align-items: center;
+  background-color: #000;
+  width: 100%;
+  z-index: 100;
+}
+.brand {
+  color: rgb(57, 243, 11);
+  font-size: 35px;
+  font-weight: bold;
+  background-size: contain;
+  width: 380px;
+  height: 38px;
+  float: left;
+  font-family: "Pacifico",cursive;
+  margin-left: 100px;
+}
+.menu {
+  position: absolute;
+  right: 120px;
+}
+.menu a {
+  color: rgb(255, 254, 254);
+  text-decoration: none;
+  font-weight: 700;
+  padding: 8px 20px;
+  border-radius: 15px;
+  margin-left: 20px;
+  transition: 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+.menu a:hover {
+  background-color: rgba(59, 59, 59, 0.5);
+  color: #06fdfd;
+}
+      /* Navbar Ends */
+
+      /* Home starts */
+
+
+#home{
+  display: flex;
+  flex-direction: column;
+  height: 840px;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center ;
+  align-items: center;
+  color: white;
+}
+#home::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url(https://media.istockphoto.com/photos/building-with-large-h-sign-for-hospital-picture-id1130389312?k=20&m=1130389312&s=612x612&w=0&h=4edAr7WFKZfiENIVJlzC-qyUqV46GwCcDS-Kcr4aO_4=) no-repeat center center/cover;
+  height: 840px;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid white; */
+  align-items: center;
+  position: absolute;
+  top: 30%;
+  right: 10%;
+}
+.headings{
+  font-family: "poppins";
+  font-size: 3rem;
+  text-align: center;
+  margin: 40px 0px;
+}
+.btn{
+  padding: 10px 35px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  outline: none;
+  transition: 0.6s ease;
+
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+}
+
+     /* Home Ends */
+
+     /* About section start */
+#about {
+  width: 80%;
+  margin: auto;
+}
+.about-inner {
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about .about-info {
+  text-align: left;
+  padding-left: 10px;
+  width: 50%;
+  align-items: center;
+}
+.about .about-info .about-info-heading {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: black;
+}
+.about .about-info .about-info-desc {
+  font-size: 18px;
+  margin-top: 10px;
+}
+.about .about-info a {
+  padding: 8px 12px;
+  display: inline-block;
+  background-color: indigo;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  margin-top: 20px;
+  border-radius: 15px;
+}
+.about .about-info a:hover {
+  border: 1px solid indigo;
+  color: indigo;
+  background-color: white;
+}
+.about .vado {
+  display: block;
+  width: 50%;
+  margin-left: 75px;
+}
+.about img {
+  height: 500px;
+  width: 100%;
+  margin: auto;
+}
+
+/* About section end */
+
+
+/* Service section start */
+
+#service .service-inner {
+  width: 80%;
+  margin: auto;
+  padding: 50px 30px;
+}
+.service-inner .service-info-heading {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.service-inner .row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.service-inner .part {
+  width: 20%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px;
+}
+.service-inner .part:hover {
+  background-color: black;
+  color: white !important;
+}
+.service-inner .part h3 {
+  font-size: 22px;
+}
+.service-inner .part p {
+  font-size: 18px;
+}
+.service-inner .part .fa {
+  font-size: 35px;
+}
+
+.service-inner .first {
+  border-radius: 50% 60% 50% 70%/50% 50% 70% 60%;
+  background-color: rgb(255, 174, 0);
+}
+.service-inner .second {
+  border-radius: 90% 60% 10% 70%/50% 50% 70% 60%;
+  background-color: rgb(7, 11, 243);
+}
+.service-inner .third {
+  border-radius: 50% 90% 50% 70%/40% 50% 30% 60%;
+  background-color: rgb(8, 231, 202);
+}
+
+/* service section end */
+
+/* contact from start */
+.contact {
+  width: 90%;
+  margin: auto;
+  padding: 50px 30px;
+}
+
+.contact-inner {
+  width: 70%;
+  margin: auto;
+  display: flex;
+}
+.thulotauko {
+  align-items: center;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: black;
+  text-transform: uppercase;
+}
+
+.yeuta {
+  width: 60%;
+  align-items: center;
+  background-color: #0000;
+  margin: auto;
+}
+.yeuta span {
+  background-color: red;
+  padding: 5px 25px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 5px;
+}
+form {
+  align-items: center;
+  padding: 20px;
+  width: 80%;
+  margin-left: 30px;
+  display: inline-block;
+}
+#btnid {
+  outline: none;
+  border: none;
+  background-color: black;
+  padding: 5px 12px;
+  color: white;
+}
+li {
+  list-style: none;
+  margin: 15px;
+  font-size: 18px;
+}
+.msg {
+  text-align: center;
+  font-size: 18px;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #000;
+  width: 100%;
+  background-color: transparent;
+  color: rgb(10, 10, 10);
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.contact-inner .arko {
+  width: 40%;
+  margin: auto;
+  border-left: 5px solid indigo;
+}
+.arkovitra {
+  align-items: center;
+  padding-left: 20px;
+  display: inline-block;
+}
+.arkovitra h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.arkovitra h4 {
+  margin: 0px;
+  padding: 0px;
+}
+.arkovitra p {
+  margin: 5px !important;
+}
+/* contact from end */
+
+/* footer section here */
+
+.footer {
+  width: 100vhpx;
+  background-color: black;
+  height: 25%;
+  margin: 0;
+  padding: 10px 0px 20px 0px;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.footer .footer-info-heading {
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.footer .footer-inner {
+  margin: 20px 600px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.footer .footer-inner .social-icon {
+  display: flex;
+  align-items: center;
+
+  justify-content: space-between;
+}
+.social-icon a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+}
+
+.icon .facebook {
+  background-color: rgb(4, 101, 245);
+}
+.icon .instagram {
+  background: linear-gradient(45deg, rgb(253, 84, 6), blue, yellow);
+}
+.icon .git {
+  background-color: white;
+  color: black;
+}
+.icon .youtube {
+  background-color: rgb(248, 0, 0);
+}
+.icon .linkedin {
+  background-color: rgb(3, 130, 248);
+}
+
+.footer-inner p {
+  font-size: 20px;
+  font-weight: 500;
+}
